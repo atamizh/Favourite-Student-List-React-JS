@@ -1,0 +1,121 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #ffffff;
+  color: #111111;
+  font-size: 12px;
+}
+
+.app-container {
+  width: 100%;
+  min-height: 100vh;
+  background-color: #ffffff;
+}
+
+.navbar {
+  width: 100%;
+  min-height: 34px;
+  background-color: #ed7077;
+  display: flex;
+  align-items: center;
+  gap: 22px;
+  padding: 0 10px;
+}
+
+.navbar a {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 11px;
+  padding: 11px 0;
+}
+
+.navbar a:hover {
+  text-decoration: underline;
+}
+
+main {
+  background-color: #ffffff;
+  min-height: 300px;
+}
+
+.page {
+  padding: 8px 12px;
+  background-color: #ffffff;
+  min-height: 300px;
+}
+
+.student-list {
+  padding-left: 20px;
+  margin: 0;
+}
+
+.student-list li {
+  min-height: 25px;
+  padding: 0;
+  display: list-item;
+  line-height: 25px;
+}
+
+.student-list li::marker {
+  color: #111111;
+}
+
+.student-list li span {
+  display: inline-block;
+  width: 92px;
+  font-size: 11px;
+}
+
+.add-btn,
+.remove-btn {
+  display: inline-block;
+  background-color: #080808;
+  color: #ffffff;
+  border: none;
+  border-radius: 7px;
+  padding: 3px 7px;
+  font-family: inherit;
+  font-size: 11px;
+  line-height: 14px;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.add-btn:hover,
+.remove-btn:hover {
+  background-color: #333333;
+}
+
+.add-btn:disabled {
+  background-color: #555555;
+  cursor: default;
+}
+
+.empty-message {
+  padding: 10px 0;
+  font-size: 12px;
+  color: #333333;
+}
+
+@media (min-width: 768px) {
+  .page {
+    min-height: 300px;
+  }
+}
+
+@media (max-width: 480px) {
+  .navbar {
+    gap: 18px;
+    padding: 0 10px;
+  }
+
+  .student-list li span {
+    width: 92px;
+  }
+}
